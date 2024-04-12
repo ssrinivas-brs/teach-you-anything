@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <title>Teach Anything related to software | OpenAI</title>
+        <link rel="icon" href="http://203.193.173.125/buildriseshine/favicon.png" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="d-flex justify-content-center">
+                <h4>API: OpenAI</h4>
+            </div>
+        </header>
+
+        <main role="main" class="pt-0">
+            <div class="app mt-5 container text-center">
+                <div>
+                    <h2 class="m-0 text-light">Teach you anything about software in seconds</h2>
+                </div>
+                <div class="w-100 d-block m-auto">
+                    <label class="w-50 mt-2 text-light">1. Write your question?</label>
+                    <textarea class="form-control w-50 d-inline my-2" id="searchQuery" placeholder="What is javascript?" value="What is javascript?">What is javascript?</textarea>
+                </div>
+                <div class="w-100 d-block m-auto">
+                    <label class="w-50 text-light">2. Select Difficulty</label>
+                    <select class="form-control w-50 d-inline my-2" id="difficulty">
+                        <option value="Easy">Easy</option>
+                        <option value="Profession">Profession</option>
+                    </select>
+                </div>
+                <div class="w-100 d-block m-auto">
+                    <button class="btn btn-primary w-50 mt-2" id="submit"><span id="answer">Get the answers</span>
+                        <div id="loader" class="spinner-border spinner-border-sm d-none" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                    </button>
+                </div>
+                <div id="err_blk" class="w-auto m-auto d-none text-light mt-2 bg-danger badge"></div>
+                <div id="res_blk" class="w-100 d-block m-auto d-none text-light">
+                    <h3 class="w-50 m-auto mt-2">The Answer is: </h3>
+                    <div id="results" class="w-50 m-auto my-2 text-start new-line"></div>
+                </div><br/>
+            </div>
+        </main>
+
+        <footer class="footer footer-dark">
+            <div class="d-flex justify-content-between">
+                <div class="leftCopyright ps-5">ALL RIGHTS RESERVED BRS STUDIO, INDIA</div>
+                <div class="rightFooter text-end pe-5">
+                    <img src="assets/img/footer-logo.png" alt="logo" />
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
